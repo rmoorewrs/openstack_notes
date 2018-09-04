@@ -78,6 +78,7 @@ chmod 600 ubuntu_bionic_private.pem
 >Note: if you skip this step, ssh will not accept the private key file.
 
 ### 6) Launch the Instance from the Ubuntu Bionic image using  your favorite method (horizon, heat, nova, etc)
+- make sure to specify the keypair you created in step 5 (or the keypair you intend to use) when launching the instance
 - make sure the instance is on a network that's routable from your current machine (use floating IP if necessary)
 - find the externally available IP address of the instance
 >NOTE: you won't be able to log in via the console or by  ssh without using the private key
